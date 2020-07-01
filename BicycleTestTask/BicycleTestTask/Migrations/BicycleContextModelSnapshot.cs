@@ -26,6 +26,7 @@ namespace BicycleTestTask.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("BicycleCategory")
+                        .IsRequired()
                         .HasColumnType("nvarchar(40)");
 
                     b.Property<bool>("IsRented")

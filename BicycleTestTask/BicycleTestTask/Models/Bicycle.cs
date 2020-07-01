@@ -12,14 +12,14 @@ namespace BicycleTestTask.Models
         [Column(TypeName = "nvarchar(40)")]
         public string Name { get; set; }
 
-      //  [Required]
+        [Required]
         [Column(TypeName = "nvarchar(40)")]
         public string BicycleCategory { get; set; }
 
-       // [Required]
+        [Required]
         public float Price { get; set; }
 
-        //[Required]
-        public bool IsRented { get; set; } 
+        [Required]
+        public bool IsRented { get; set; }
     }
 }

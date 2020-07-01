@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BicycleTestTask.Migrations
 {
     [DbContext(typeof(BicycleContext))]
-    [Migration("20200630212833_Tryna_Without_RequiredAttribute")]
-    partial class Tryna_Without_RequiredAttribute
+    [Migration("20200701161800_Initial_Migration")]
+    partial class Initial_Migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,6 +28,7 @@ namespace BicycleTestTask.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("BicycleCategory")
+                        .IsRequired()
                         .HasColumnType("nvarchar(40)");
 
                     b.Property<bool>("IsRented")

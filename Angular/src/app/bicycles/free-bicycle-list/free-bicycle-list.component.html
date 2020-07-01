@@ -1,13 +1,11 @@
-<table class="table table-hover">
-    <tr *ngFor="let bicycle of service.AvailableBicycles">
-        <td>{{bicycle.Name}}</td>
-        <td>{{bicycle.BicycleCategory}}</td>
-        <td>{{bicycle.Price}}</td>
-        <td>
-            <button class="btn btn-success" (click)="onRent(bicycle.Id)"> Rent </button>
-        </td>
-        <td>
-            <button class="btn btn-success" (click)="onDelete(bicycle.Id)"> Delete </button>
-        </td>
-    </tr>
+<table class="table table-hover" *ngFor="let bicycle of service.AvailableBicycles">
+    <td>
+        <h5>{{bicycle.Name}} / {{bicycle.BicycleCategory}} / {{bicycle.Price}}</h5>
+    </td>
+    <td>
+        <button class="btn btn-lg btn-primary" (click)="onRent(bicycle.Id)"> Rent </button>
+    </td>
+    <td class = "td-left">
+        <button class="btn btn-lg btn-danger" (click)="onDelete(bicycle.Id)"> Delete </button>
+    </td>
 </table>
