@@ -1,0 +1,22 @@
+<form #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="Id" [value]="service.formData.Id" >
+    <input type="hidden" name="IsRented" [value]="service.formData.IsRented" >
+    <div class="form-group">
+        <input name="Name" #Name="ngModel" [(ngModel)]="service.formData.Name" 
+        class="form-control" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <select name="BicycleCategory" #Name="ngModel" [(ngModel)]="service.formData.BicycleCategory" 
+        class="form-control" >
+            <option value="Mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
+          </select>
+    </div>
+    <div class="form-group">
+        <input name="Price" #Name="ngModel" [(ngModel)]="service.formData.Price" 
+        class="form-control" placeholder="Price" type="number" step="0.01">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" type="submit">Submit</button>
+    </div>
+</form>

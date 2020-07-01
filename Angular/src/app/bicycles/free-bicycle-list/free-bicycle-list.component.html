@@ -1,0 +1,13 @@
+<table class="table table-hover">
+    <tr *ngFor="let bicycle of service.AvailableBicycles">
+        <td>{{bicycle.Name}}</td>
+        <td>{{bicycle.BicycleCategory}}</td>
+        <td>{{bicycle.Price}}</td>
+        <td>
+            <button class="btn btn-success" (click)="onRent(bicycle.Id)"> Rent </button>
+        </td>
+        <td>
+            <button class="btn btn-success" (click)="onDelete(bicycle.Id)"> Delete </button>
+        </td>
+    </tr>
+</table>
