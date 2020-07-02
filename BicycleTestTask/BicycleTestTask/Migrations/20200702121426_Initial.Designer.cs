@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BicycleTestTask.Migrations
 {
     [DbContext(typeof(BicycleContext))]
-    [Migration("20200701161800_Initial_Migration")]
-    partial class Initial_Migration
+    [Migration("20200702121426_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

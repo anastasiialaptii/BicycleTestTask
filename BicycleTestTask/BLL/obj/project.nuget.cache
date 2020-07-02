@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gQ5KSvE8x6CTVsZ/t9yyi0q3+886S/MLl2FArUsYk4Ta9ZJ1Px8j3Mzb16xB0LVL3Ux6Fz3DgS0/mLIf3kU4nA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AstroMugiwara\\Desktop\\BicycleTask\\BicycleTestTask\\BLL\\BLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AstroMugiwara\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

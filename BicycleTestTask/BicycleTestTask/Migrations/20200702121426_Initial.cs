@@ -2,7 +2,7 @@
 
 namespace BicycleTestTask.Migrations
 {
-    public partial class Initial_Migration : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
