@@ -9,7 +9,7 @@ import { BicycleService } from 'src/app/shared/bicycle.service';
 })
 export class TotalBisyclesPriceComponent implements OnInit {
 
-  constructor(public service:BicycleService) { }
+  constructor(public service: BicycleService) { }
 
   ngOnInit(): void {
     this.service.GetTotalBicyclesPrice();

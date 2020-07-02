@@ -23,10 +23,6 @@ export class BicycleService {
     return this.http.delete(this.rootURL + '/Bicycles/DeleteBicycle/' + id)
   }
 
-  // UpdateBicycle() {
-  //   return this.http.put(this.rootURL + '/Bicycles/PutBicycle/' + this.formData.Id, this.formData)
-  // }
-
   RentBicycle(id) {
     return this.http.put(this.rootURL + '/Bicycles/RentBicycle/' + id, id)
   }

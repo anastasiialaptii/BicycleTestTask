@@ -13,16 +13,15 @@ export class FreeBicycleListComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.GetFreeBicycles();
-    this.service.GetRentedBicycles(); 
+    this.service.GetRentedBicycles();
   }
- 
-   onDelete(Id) {
+
+  onDelete(Id) {
     if (confirm('Are you sure to delete this record ?')) {
       this.service.DeleteBicycle(Id)
         .subscribe(res => {
-          //debugger;
           this.service.GetFreeBicycles();
-          this.service.GetTotalBicyclesAmount();                  
+          this.service.GetTotalBicyclesAmount();
         },
           err => {
             debugger;
@@ -32,17 +31,16 @@ export class FreeBicycleListComponent implements OnInit {
   }
 
   onRent(Id) {
-      this.service.RentBicycle(Id)
-        .subscribe(res => {
-          //debugger;
-          this.service.GetFreeBicycles();
-          this.service.GetRentedBicycles();
-          this.service.GetTotalBicyclesPrice();
-          this.service.GetTotalBicyclesAmount();       
-        },
-          err => {
-            debugger;
-            console.log(err);
-          })
-    }
+    this.service.RentBicycle(Id)
+      .subscribe(res => {
+        this.service.GetFreeBicycles();
+        this.service.GetRentedBicycles();
+        this.service.GetTotalBicyclesPrice();
+        this.service.GetTotalBicyclesAmount();
+      },
+        err => {
+          debugger;
+          console.log(err);
+        })
   }
+}

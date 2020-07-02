@@ -12,13 +12,9 @@ export class BicycleListComponent implements OnInit {
   constructor(public service: BicycleService) { }
 
   ngOnInit(): void {
-    this.service.GetRentedBicycles(); 
+    this.service.GetRentedBicycles();
 
   }
-
-  // populateForm(bicycle: Bicycle) {
-  //   this.service.formData = Object.assign({}, bicycle);
-  // }
 
   onCancelRent(id) {
     this.service.CancelRentBicycle(id)
