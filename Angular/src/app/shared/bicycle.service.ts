@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BicycleService {
   formData: Bicycle;
-  readonly rootURL = 'http://localhost:57953/api';
+  readonly rootURL = 'http://localhost:49729/api';
   AvailableBicycles: Bicycle[];
   RentedBicycles: Bicycle[];
   TotalBicyclesPrice:number;

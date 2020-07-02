@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BicycleTaskApi", "BicycleTaskApi\BicycleTaskApi.csproj", "{84887C15-F61A-46B2-A09C-A2B05AB55A97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84887C15-F61A-46B2-A09C-A2B05AB55A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84887C15-F61A-46B2-A09C-A2B05AB55A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84887C15-F61A-46B2-A09C-A2B05AB55A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84887C15-F61A-46B2-A09C-A2B05AB55A97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57E81779-ECD1-4996-BBD6-C005641A2B8F}
+	EndGlobalSection
+EndGlobal
